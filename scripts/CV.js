@@ -1,7 +1,7 @@
 'use strict';
 
 // In production, the bundled pdf.js shall be used instead of RequireJS.
-require.config({paths: {'pdfjs': '.'}});
+require.config({paths: {'pdfjs': 'scripts'}});
 require(['pdfjs/display/api', 'pdfjs/display/global'], function (api, global) {
   // In production, change this to point to the built `pdf.worker.js` file.
   global.PDFJS.workerSrc = 'pdf.worker.js';
